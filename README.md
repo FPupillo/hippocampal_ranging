@@ -3,10 +3,10 @@
 Calculate the interrater reliability for the hippocampal ranging process
 
 Description of the files:
-### correct_slices
-.csv files containing information about the correct slices of the 4 testsets
+### rater1
+.csv files containing information about the ranging for rater1 testsets
 ### test_sets
-.csv files contaoining information about the slices selected by the "rater"
+.csv files containing information about the ranging for rater2 for the testsets
 ### hippocampal_ranging.Rproj
 R project file - useful to set the working directory automatically and save temporary changes
 ### irr.R 
