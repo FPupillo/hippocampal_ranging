@@ -1,0 +1,56 @@
+  
+shuffle<-function(data, colnum1, colnum2){
+# Input:
+#   data = dataset
+#   colnum1 = the number of the column in the dataset that needs to be reshuffled
+#   colnum2 = the number of the second column that needs to be reshuffled. it is optional  
+# Output:
+#   dataset reshuffled  
+#   --------------------
+  
+iscons<-function(numbers){
+  eval<-NA
+for ( i in 1:(length(numbers)-1)){
+  eval[i]<-numbers[i]==numbers[i+1]
+}
+  return(eval)
+}
+
+dif1<-head(iscons(data[,colnum1]),-1)
+
+if (exists("colnum2")){
+dif2<-head(iscons(data[,colnum2]),-1)
+
+while (any(dif1)| any(dif2)){
+  data$order<-sample(data[,colnum1])
+  data<-data[order(data$order),]
+  dif1<-head(iscons(data[,colnum1]),-1)
+  dif2<-head(iscons(data[,colnum2]),-1)
+}
+}else{
+  while(any(dif1)){
+    data$order<-sample(data[,colnum1])
+    data<-data[order(data$order),]
+    dif1<-head(iscons(data[,colnum1]),-1) 
+  }
+}
+
+return(data)
+
+}
+
+# simulate with fake dataset
+
+# how many scenes?
+scenenum<-6
+# how many times each scene is repeated? 
+rep<-2
+
+fakedata<-data.frame(a=rep(1:scenenum, each=rep), b=rep(1:2, times=scenenum*rep/2))
+
+test<-shuffle(fakedata,1,2)
+
+
+
+  
+

@@ -1,0 +1,15 @@
+  bindThemAll<-function(){
+  # function that rbinds all the dataframes that start with "Accuracy"
+  
+  # crate a vector with all the variables that start with Accuracy
+  allvar<-ls(envir=.GlobalEnv, pattern = "^Accuracy")
+
+  # now bind them
+  AllAccuracy<-vector()
+  for (d in 1:length(allvar)){
+    readdata<-as.data.frame(eval(parse(text=allvar[d])))
+    AllAccuracy<-rbind(AllAccuracy, readdata)
+  }
+
+  return (AllAccuracy)
+}

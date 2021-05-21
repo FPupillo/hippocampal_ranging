@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1621585039570.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6000D057",
+    "lastKnownWriteTime" : 1620820391,
+    "last_content_update" : 1621585039570,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "8D718072",
+        "caption" : "curr_kappa",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=curr_kappa&cache_key=8D718072",
+        "displayedObservations" : "1",
+        "environment" : "",
+        "expression" : "curr_kappa",
+        "object" : "curr_kappa",
+        "preview" : "0",
+        "totalObservations" : "1",
+        "variables" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

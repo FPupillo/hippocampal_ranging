@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1621584873648.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9E61A6BC",
+    "lastKnownWriteTime" : 1590746983,
+    "last_content_update" : 1621584873648,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "66CF2E2",
+        "caption" : "kappa_test.set2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=kappa_test.set2&cache_key=66CF2E2",
+        "displayedObservations" : 1,
+        "environment" : "",
+        "expression" : "kappa_test.set2",
+        "object" : "kappa_test.set2",
+        "preview" : 0,
+        "totalObservations" : 1,
+        "variables" : 4
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
