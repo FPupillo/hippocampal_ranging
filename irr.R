@@ -94,3 +94,6 @@ ggplot(kappamer, aes(x=testset, y=value, group = variable, colour=variable))+
   geom_text(aes(label = round(value, 2)),
             vjust = "outward", hjust = "inward",
             show.legend = FALSE, colour = "black") 
+
+# save the plot
+ggsave( "irr.jpg", plot = last_plot())
