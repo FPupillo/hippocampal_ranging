@@ -33,7 +33,7 @@ KappaCalc<-function(rater1, rater2){
 # compare against correct slices or with another rater?
 # 1: correct slices 
 # 2: another rater
-whichComp<-2
+whichComp<-1
 
 # list all the test sets
 rater1<-list.files("rater1")
@@ -155,7 +155,8 @@ ggplot(kappamer, aes(x=testN, y=IRR, group = Slice, colour=Slice))+
   geom_point()+
   geom_text(aes(label = round(IRR, 2)),
             vjust = "outward", hjust = "inward",
-            show.legend = FALSE, colour = "black") 
+            show.legend = FALSE, colour = "black") +
+  scale_x_continuous("Test Number", breaks = seq(1, 100, 1))
 )
 # save the plot
 ggsave( "irr.jpg", plot = last_plot())
