@@ -1,7 +1,7 @@
 # hippocampal_ranging
 
 Calculate the interrater reliability for the hippocampal ranging process, using
-test sets and correct slices from the (HPC group)[https://gitlab.com/viraganna.varga/hippocampal-subfield-ranging/-/wikis/home/The-Hippocampal-Ranging-Process].
+test sets and correct slices from the [HPC group](https://gitlab.com/viraganna.varga/hippocampal-subfield-ranging/-/wikis/home/The-Hippocampal-Ranging-Process).
 
 The script irr.R calculates the inter-rater reliability of the hippocampal segmentations, comparing 
 ratings of starting and ending slices (right and left) with either correct slices (from the HPC group) or two independent raters. 
@@ -15,7 +15,7 @@ The correct slices are already in the `correct.slices` folder.
 
 Description of the files:
 ### correct.slices
-.csv files that are indicated as correct from the (Hippocampal Ranging Group)[https://gitlab.com/viraganna.varga/hippocampal-subfield-ranging/-/wikis/home/The-Hippocampal-Ranging-Process]
+.csv files that are indicated as correct from the [Hippocampal Ranging Group](https://gitlab.com/viraganna.varga/hippocampal-subfield-ranging/-/wikis/home/The-Hippocampal-Ranging-Process)
 ### rater1
 .csv files containing information about the ranging for rater1 testsets
 ### test_sets
